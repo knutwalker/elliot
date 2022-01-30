@@ -1,0 +1,21 @@
+[package]
+name = "elliot"
+version = "0.1.0"
+authors = ["Paul Horn <dev@knutwalker.engineer>"]
+description = "Typed actors defined by behaviors"
+edition = "2021"
+
+license = "MIT OR Apache-2.0"
+homepage = "https://gh.knutwalker.io/elliot/"
+repository = "https://github.com/knutwalker/elliot/"
+readme = "README.md"
+categories = ["asynchronous", "concurrency"]
+keywords = ["async", "actors", "actor-model", "tokio"]
+
+
+[dependencies]
+pin-project-lite = "0.2"
+tokio = { version = "1", features = ["parking_lot", "rt", "sync"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt-multi-thread"] }

@@ -5,7 +5,7 @@ run_task = { name = "ci-flow", fork = true }
 [tasks.readme]
 workspace = false
 command = "cargo"
-args = ["readme", "--project-root", "crates/wordle-solvers", "--input", "src/main.rs", "--template", "${PWD}/README.tpl", "--output", "${PWD}/README.md"]
+args = ["readme", "--input", "src/lib.rs", "--template", "${PWD}/README.tpl", "--output", "${PWD}/README.md"]
 
 [tasks.t]
 workspace = false
